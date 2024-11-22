@@ -1,0 +1,51 @@
+h1 {
+    color: rgba(37, 38, 37, 0.763);
+    background: linear-gradient(to right, #fff5e6,  #b3e6ff);
+    font: bolder;
+    text-align: center;
+    font-size: 45px;
+    text-shadow: 2px 2px white;
+    box-shadow: 2px 2px rgba(166, 172, 195, 0.764);
+}
+
+
+
+/* עיצוב כללי לטבלה */
+.table {
+    width: 100%;
+    margin: 20px auto;
+    border-collapse: collapse; /* איחוד גבולות */
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* עיצוב לכותרת הטבלה */
+  th {
+    background-color: #82bee0cf; /* צבע רקע לכותרת */
+    color: white; /* צבע טקסט לבן */
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  /* עיצוב לתאים בטבלה */
+  td {
+    border: 1px solid #ddd; /* גבול דק מסביב לתאים */
+    padding: 10px; /* ריווח בתוך התאים */
+  }
+  
+  /* עיצוב לרקע שונה בכל שורה זוגית */
+  tr:nth-child(even) {
+    background-color: #f9f9f9; /* צבע רקע לשורות זוגיות */
+  }
+  
+  /* עיצוב לשורה שמרחפים עליה */
+  tr:hover {
+    background-color: #f1f1f1; /* צבע רקע לשורה כשעוברים מעליה */
+  }
+  
+  /* עיצוב לתאים ריקים */
+  td:empty {
+    background-color: #f4f4f4; /* צבע רקע לתאים ריקים */
+    border: 1px dashed #955454; /* גבול מקווקו לתאים ריקים */
+  }
