@@ -1,0 +1,14 @@
+.kanban-board {
+    display: flex;
+    gap: 10px;
+}
+.column {
+    width: 30%;
+    background: #eee;
+    padding: 10px;
+    border-radius: 8px;
+}
+.task-column {
+    min-height: 50px;
+    padding: 5px;
+}

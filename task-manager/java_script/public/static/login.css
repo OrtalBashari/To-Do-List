@@ -1,0 +1,97 @@
+/* עיצוב כללי */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(90deg, #ffffffd1, #bbdefbb4);
+}
+
+.container {
+    width: 500px;
+    height: 600px;
+    padding: 20px;
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    font-size: 40px;
+    color: #87b1cb;
+    margin-bottom: 50px;
+}
+
+.input-box {
+    position: relative;
+    width: 80%;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px 40px;
+    margin: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    outline: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border-color: #64b4f6c1;
+}
+
+.input-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #64b5f6;
+}
+
+button {
+    width: 70%;
+    padding: 12px;
+    margin: 20px;
+    border: none;
+    border-radius: 10px;
+    background: #7da8cb;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #6aa0cd92;
+}
+
+.container p {
+    font-size: 24px;
+    margin: 15px 0;
+}
+
+.another-apps a {
+    display: inline-flex;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    margin: 0 8px;
+    text-decoration: none;
+    color: rgba(108, 112, 112, 0.831);
+}
+
+.create-account p {
+    font-size: 20px;
+}
+
+.create-account a {
+    color: #64b5f6;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>מנהל משימות</title>
+    <link rel="stylesheet" href="static/task.css">
+</head>
+<body>
+    <h1>מנהל משימות</h1>
+    
+    <div class="view-selector">
+        <button data-view="table">תצוגת טבלה</button>
+        <button data-view="cards">תצוגת כרטיסים</button>
+        <button data-view="kanban">תצוגת קנבן</button>
+    </div>
+    
+    <div class="task-input">
+        <input type="text" id="taskInput" placeholder="הכנס משימה...">
+        <button onclick="addTask()">➕</button>
+    </div>
+    
+    <div id="tableView" class="task-view">
+        <table>
+            <thead>
+                <tr>
+                    <th>יום</th>
+                    <th>משימה</th>
+                    <th>פעולות</th>
+                </tr>
+            </thead>
+            <tbody id="taskTable"></tbody>
+        </table>
+    </div>
+    
+    <div id="cardsView" class="task-view" style="display: none;">
+        <div id="taskContainer" class="card-container"></div>
+    </div>
+    
+    <div id="kanbanView" class="task-view" style="display: none;">
+        <div class="kanban-board">
+            <div class="kanban-column" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <h3>לביצוע</h3>
+                <div id="todo" class="task-container"></div>
+            </div>
+            <div class="kanban-column" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <h3>בתהליך</h3>
+                <div id="inProgress" class="task-container"></div>
+            </div>
+            <div class="kanban-column" ondragover="allowDrop(event)" ondrop="drop(event)">
+                <h3>הושלם</h3>
+                <div id="done" class="task-container"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
