@@ -4,18 +4,7 @@ const mongoose = require('mongoose');
 const path = require('path');
 const cors = require('cors');
 
-const userRoutes = require("./routes/autoRoutes");
-
-
-
-
-
-
-
-
-
-
-
+const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 
